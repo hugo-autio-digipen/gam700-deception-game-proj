@@ -1,7 +1,7 @@
-BSD 3-Clause License
+# BSD 3-Clause License
 
-Copyright (c) 2021, B. Comes
-All rights reserved.
+#### Copyright (c) 2021, brian-comes-digipen & contributors
+#### All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
