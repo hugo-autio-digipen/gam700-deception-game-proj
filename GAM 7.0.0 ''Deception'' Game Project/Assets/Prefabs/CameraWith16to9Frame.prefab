@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4599620478492566353}
   - component: {fileID: 4599620478492566352}
   m_Layer: 31
-  m_Name: CameraBorder_Right
+  m_Name: CameraBorder (Right)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4599620478965124498}
   - component: {fileID: 4599620478965124497}
   m_Layer: 31
-  m_Name: CameraBorder_Top
+  m_Name: CameraBorder (Top)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 4599620479528418577}
   - component: {fileID: 4599620479528418576}
   m_Layer: 31
-  m_Name: CameraBorder_Bottom
+  m_Name: CameraBorder (Bottom)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 4599620480021646787}
   - component: {fileID: 4599620480021646786}
   m_Layer: 31
-  m_Name: CameraBorder_Left
+  m_Name: CameraBorder (Left)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
