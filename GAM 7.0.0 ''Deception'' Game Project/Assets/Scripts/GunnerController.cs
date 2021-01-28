@@ -1,18 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GunnerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public float ZPositionOverride = -5;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private CircleCollider2D CC2D;
+	private SpriteRenderer SPR;
+
+	private void Awake()
+	{
+		CC2D = GetComponent<CircleCollider2D>();
+		SPR = GetComponent<SpriteRenderer>();
+	}
+
+	private void Update()
+	{
+		// Reset sprite color to white
+		SPR.color = new Color(255, 255, 255);
+
+		// Set sprite position to be where the mouse is on screen
+		transform.position = new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, ZPositionOverride);
+
+		// Just to test if clicking works, set the sprite color to red when clicking. This will be changed to actually
+		// do stuff later
+		if (Input.GetMouseButton(0))
+		{
+			print("click");
+			SPR.color = new Color(255, 0, 0);
+		}
+	}
 }
