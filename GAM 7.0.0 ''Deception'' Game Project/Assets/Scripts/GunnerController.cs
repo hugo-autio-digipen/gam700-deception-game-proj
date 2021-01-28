@@ -25,7 +25,7 @@ public class GunnerController : MonoBehaviour
 		// do stuff later
 		if (Input.GetMouseButton(0))
 		{
-			print("click");
+			print("GunnerController.Update() says \"Click\"");
 			SPR.color = new Color(255, 0, 0);
 		}
 	}
