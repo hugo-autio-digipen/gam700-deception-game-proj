@@ -1,16 +1,21 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class GunnerController : MonoBehaviour
 {
 	public float ZPositionOverride = -5;
+	public bool HideCursor = false;
+	public bool LockCursor = false;
 
 	private CircleCollider2D CC2D;
 	private SpriteRenderer SPR;
 
-	private void Awake()
+	private void Start()
 	{
 		CC2D = GetComponent<CircleCollider2D>();
 		SPR = GetComponent<SpriteRenderer>();
+		Cursor.visible = !HideCursor;
+		Cursor.lockState = (CursorLockMode)(Convert.ToInt32(LockCursor) * 2);
 	}
 
 	private void Update()
